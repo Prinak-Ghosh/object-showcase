@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Object Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="brand">Objekt — Design</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="objects.html">Objects</a>
+      <a href="materials.html">Materials</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    <section style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;">
+      <h1 style="font-size:2.5rem;margin-bottom:1rem;">Welcome to Object Showcase</h1>
+      <p style="max-width:600px;font-size:1.2rem;text-align:center;">Discover the hidden stories and materials behind the objects you use every day. Explore, learn, and appreciate the craftsmanship and science that shape our world.</p>
+      <div class="scroll-note" style="margin-top:2.5rem;display:flex;flex-direction:column;align-items:center;">
+        <span style="background:#fffbe6;color:#b8860b;padding:0.5rem 1.2rem;border-radius:1.2rem;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.06);">Scroll down to explore objects</span>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" style="margin-top:0.5rem;" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 12L16 20L24 12" stroke="#b8860b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+    <section class="object-section" style="background:#f5f3f0;">
+      <img src="images/headphones.svg" alt="Headphones" class="object-img"/>
+      <div class="material-box" onclick="showModal('Headphones', 'Plastic (shell), aluminum (band), memory foam (cushions), copper (wiring).')">
+        Headphones: Plastic (shell), aluminum (band), memory foam (cushions), copper (wiring).
+      </div>
+    </section>
+    <section class="object-section" style="background:#f5e9e0;">
+      <img src="images/watch.svg" alt="Mechanical Watch" class="object-img"/>
+      <div class="material-box" onclick="showModal('Mechanical Watch', 'Stainless steel (case), sapphire crystal (glass), leather (strap), brass (gears).')">
+        Mechanical Watch: Stainless steel (case), sapphire crystal (glass), leather (strap), brass (gears).
+      </div>
+    </section>
+    <section class="object-section" style="background:#e0f5e9;">
+      <img src="images/chair.svg" alt="Office Chair" class="object-img"/>
+      <div class="material-box" onclick="showModal('Office Chair', 'Mesh fabric (backrest), foam (seat), steel (mechanism), nylon (base).')">
+        Office Chair: Mesh fabric (backrest), foam (seat), steel (mechanism), nylon (base).
+      </div>
+    </section>
+    <section class="object-section" style="background:#f5f0e0;">
+      <img src="images/camera.svg" alt="DSLR Camera" class="object-img"/>
+      <div class="material-box" onclick="showModal('DSLR Camera', 'Magnesium alloy (body), glass (lens), rubber (grip), silicon (buttons).')">
+        DSLR Camera: Magnesium alloy (body), glass (lens), rubber (grip), silicon (buttons).
+      </div>
+    </section>
+    <section class="object-section" style="background:#e0f0f5;">
+      <img src="images/laptop.svg" alt="Laptop" class="object-img"/>
+      <div class="material-box" onclick="showModal('Laptop', 'Aluminum (chassis), glass (screen), plastic (keys), lithium-ion (battery).')">
+        Laptop: Aluminum (chassis), glass (screen), plastic (keys), lithium-ion (battery).
+      </div>
+    </section>
+  </main>
+  <div id="modal" class="modal" onclick="hideModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span id="modal-title"></span>
+      <p id="modal-details"></p>
+      <button onclick="hideModal()">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
