@@ -66,6 +66,17 @@ nav a:hover {
 .material-box:hover {
   box-shadow: 0 4px 24px rgba(255,102,0,0.15);
 }
+.click-hint {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+.material-box:hover .click-hint {
+  color: #ff6600;
+  opacity: 1;
+}
 .modal {
   display: none;
   position: fixed;
