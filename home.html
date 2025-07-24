@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - Object Showcase</title>
+  <title>Objects - Object Showcase</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
 </head>
@@ -11,61 +11,51 @@
   <header>
     <div class="brand">Objekt — Design</div>
     <nav>
-      <a href="home.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="objects.html">Objects</a>
       <a href="materials.html">Materials</a>
       <a href="about.html">About</a>
     </nav>
   </header>
   <main>
-    <section style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;">
-      <h1 style="font-size:2.5rem;margin-bottom:1rem;">Welcome to Object Showcase</h1>
-      <p style="max-width:600px;font-size:1.2rem;text-align:center;">Discover the hidden stories and materials behind the objects you use every day. Explore, learn, and appreciate the craftsmanship and science that shape our world.</p>
-      <div class="scroll-note" style="margin-top:2.5rem;display:flex;flex-direction:column;align-items:center;">
-        <span style="background:#fffbe6;color:#b8860b;padding:0.5rem 1.2rem;border-radius:1.2rem;font-size:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.06);">Scroll down to explore objects</span>
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" style="margin-top:0.5rem;" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 12L16 20L24 12" stroke="#b8860b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-    </section>
     <section class="object-section" style="background:#f5f3f0;">
       <img src="images/headphones.jpg" alt="Headphones" class="object-img"/>
-      <div class="material-box" onclick="showModal('Headphones', 'Plastic (shell), aluminum (band), memory foam (cushions), copper (wiring).')">
-        Headphones: Plastic (shell), aluminum (band), memory foam (cushions), copper (wiring).
+      <div class="material-box" onclick="showModal('1️⃣ Headphones', 'Main parts:\n\nHeadband: Polycarbonate, ABS plastic, sometimes aluminum for adjustability.\n\nEar cups: ABS plastic, polycarbonate.\n\nCushions: PU leather, memory foam, synthetic leather.\n\nSpeaker drivers: Neodymium magnets, copper coil, PET diaphragm.\n\nWires: Copper, rubber insulation, sometimes braided nylon for durability.\n\nConnectors: Gold-plated brass or copper for jack tips.')">
+        1️⃣ Headphones: Advanced materials for premium audio experience
       </div>
     </section>
     <section class="object-section" style="background:#f5e9e0;">
       <img src="images/mechanical watch.jpg" alt="Mechanical Watch" class="object-img"/>
-      <div class="material-box" onclick="showModal('Mechanical Watch', 'Stainless steel (case), sapphire crystal (glass), leather (strap), brass (gears).')">
-        Mechanical Watch: Stainless steel (case), sapphire crystal (glass), leather (strap), brass (gears).
+      <div class="material-box" onclick="showModal('2️⃣ Mechanical Watch', 'Main parts:\n\nCase: Stainless steel (common), titanium (lightweight), ceramic (scratch resistance).\n\nCrystal: Sapphire crystal (premium, scratch-resistant), mineral glass.\n\nStrap: Stainless steel, leather, silicone rubber.\n\nGears and springs: Hardened steel, brass, sometimes nickel alloys.\n\nMovement parts: Brass plates, steel gears, synthetic ruby bearings (reduce friction).\n\nHands: Aluminum or brass, painted or luminescent coated.\n\nBack cover: Stainless steel or transparent sapphire glass.')">
+        2️⃣ Mechanical Watch: Precision engineering with premium materials
       </div>
     </section>
     <section class="object-section" style="background:#e0f5e9;">
       <img src="images/office chair.jpg" alt="Office Chair" class="object-img"/>
-      <div class="material-box" onclick="showModal('Office Chair', 'Mesh fabric (backrest), foam (seat), steel (mechanism), nylon (base).')">
-        Office Chair: Mesh fabric (backrest), foam (seat), steel (mechanism), nylon (base).
+      <div class="material-box" onclick="showModal('3️⃣ Office Chair', 'Main parts:\n\nFrame: Steel or aluminum for structure, sometimes reinforced nylon.\n\nBase: Nylon or aluminum with steel cylinder for gas lift.\n\nWheels (casters): Nylon or polyurethane for smooth rolling.\n\nSeat cushion: Foam padding (PU foam), fabric or mesh covering (polyester, nylon).\n\nArmrests: ABS plastic, polyurethane padding.\n\nBackrest: Plastic frame with mesh or foam+fabric/PU leather.\n\nMechanisms: Steel for tilt and height adjuster components.')">
+        3️⃣ Office Chair: Ergonomic design with durable materials
       </div>
     </section>
     <section class="object-section" style="background:#f5f0e0;">
       <img src="images/dslr camera.jpg" alt="DSLR Camera" class="object-img"/>
-      <div class="material-box" onclick="showModal('DSLR Camera', 'Magnesium alloy (body), glass (lens), rubber (grip), silicon (buttons).')">
-        DSLR Camera: Magnesium alloy (body), glass (lens), rubber (grip), silicon (buttons).
+      <div class="material-box" onclick="showModal('4️⃣ DSLR Camera', 'Main parts:\n\nBody: Polycarbonate with carbon fiber reinforcement, magnesium alloy frame for durability.\n\nLens housing: Aluminum, polycarbonate.\n\nLens elements: Optical glass (high-refractive, low-dispersion), sometimes fluorite.\n\nMirror: Front-surface coated glass or silicon-based mirrors.\n\nSensor: Silicon wafer, microlenses, color filters.\n\nButtons and dials: ABS plastic, rubber coatings for grip.\n\nShutter mechanism: Steel springs, carbon-fiber blades.\n\nDisplay: LCD with glass/plastic cover.')">
+        4️⃣ DSLR Camera: Professional optics with advanced materials
       </div>
     </section>
     <section class="object-section" style="background:#e0f0f5;">
       <img src="images/laptop.jpg" alt="Laptop" class="object-img"/>
-      <div class="material-box" onclick="showModal('Laptop', 'Aluminum (chassis), glass (screen), plastic (keys), lithium-ion (battery).')">
-        Laptop: Aluminum (chassis), glass (screen), plastic (keys), lithium-ion (battery).
+      <div class="material-box" onclick="showModal('5️⃣ Laptop', 'Main parts:\n\nChassis: Aluminum (MacBooks), magnesium alloy, polycarbonate, ABS blends.\n\nDisplay: LCD/LED panel with glass, polarizing films, and adhesives.\n\nKeyboard: ABS plastic keys, silicone rubber dome sheets.\n\nTrackpad: Glass or plastic surface, capacitive sensor layers.\n\nMotherboard: Fiberglass-reinforced epoxy resin (FR4), copper traces.\n\nBattery: Lithium-ion cells (cobalt, lithium, graphite, aluminum, copper).\n\nCooling system: Copper heat pipes, aluminum fins, plastic fans.\n\nPorts: Brass/copper connectors, gold plating.\n\nWires: Copper with PVC or silicone insulation.')">
+        5️⃣ Laptop: Modern computing with sophisticated materials
       </div>
     </section>
   </main>
   <div id="modal" class="modal" onclick="hideModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
-      <span id="modal-title"></span>
-      <p id="modal-details"></p>
+      <h3 id="modal-title"></h3>
+      <p id="modal-details" style="white-space: pre-line; text-align: left; line-height: 1.6;"></p>
       <button onclick="hideModal()">Close</button>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
-</html> 
+</html>

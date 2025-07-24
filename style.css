@@ -84,8 +84,15 @@ nav a:hover {
   padding: 2rem;
   min-width: 300px;
   max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   text-align: center;
+}
+.modal-content h3 {
+  margin-top: 0;
+  color: #222;
+  font-size: 1.3rem;
 }
 @media (max-width: 600px) {
   header { flex-direction: column; padding: 1rem; }
